@@ -1,0 +1,12 @@
+[init]
+	defaultBranch = main
+[user]
+	name = Kerrick Truong
+	email = KerrickTruong@gmail.com
+[core]
+	editor = nvim
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
