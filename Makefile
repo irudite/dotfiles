@@ -36,6 +36,11 @@ mac_packages:
 	$(DPM) discord firefox spotify alacritty tmux
 
 link:
+	rm -rf ~/.config/alacritty
+	rm -rf ~/.config/nvim
+	rm ~/.gitconfig
+	rm ~/.tmux.conf
+	rm ~/.zshrc
 	$(LK) ~/dotfiles/nvim ~/.config/nvim
 	$(LK) ~/dotfiles/alacritty ~/.config/alacritty
 	$(LK) ~/dotfiles/.gitconfig ~/.gitconfig
